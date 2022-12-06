@@ -162,7 +162,7 @@ const filteredFood = foodArr.filter(/* CALLBACK HERE */)
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+const filterByProperty = (property, number, type) => {}
 
 
 /*
