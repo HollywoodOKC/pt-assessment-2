@@ -92,15 +92,15 @@ console.log(empTwo)
 */
 
 const Manager = class extends Employee {
-    constructor(name, shifts, employees) {
+    constructor(name, shifts) {
         super(name, shifts);
-        this.employees = employees;
+        this.employees = [];
     }
     getEmployees() {
         console.log(`${this.name} manages ${this.employees}`);
     }
     addEmployee(emp) {
-        this.employees = emp;
+        this.employees.push(emp);
     }
 }
 
@@ -117,7 +117,7 @@ const Manager = class extends Employee {
     employees: Cece and Schmidt
 */
 
-const manager = new Manager(`Winston`, `weekday mornings weekday afternoons`, `Cece, Schmidt`);
+const manager = new Manager(`Winston`, `weekday mornings weekday afternoons`, [`Cece`, `Schmidt`]);
 
 
 /*
